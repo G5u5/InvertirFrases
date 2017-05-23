@@ -5,6 +5,8 @@
  */
 package dar.la.vuelta.a.las.frases;
 
+
+import java.util.*;
 /**
  *
  * @author Jesús Durántez Prieto
@@ -17,8 +19,10 @@ public class DarLaVueltaALasFrases {
     public static void main(String[] args) {
         String frase;
         char[] arrayFrase;
+        Scanner teclado = new Scanner(System.in);
         
-        frase = "Oesed lenoz aro cut edon isara cut se onotse";
+        System.out.println("Introduzca la frase que quiere invertir:");
+        frase = teclado.nextLine();
         
         arrayFrase = frase.toCharArray();
         
